@@ -1,17 +1,17 @@
-* {
+/* * {
   border: red dashed 1px;
-}
+} */
 
 body {
   background-image: url("https://4kwallpapers.com/images/walls/thumbs_3t/9368.jpg");
   background-size: cover;
   background-position: center;
 }
-
+/* 
 .homeCard {
-  height: 300px;
-  width: 200px;
-}
+  height: 400px;
+  width: 350px;
+} */
 
 .imgJumbo {
   height: 500px;
@@ -25,8 +25,12 @@ body {
 }
 
 .imgCard {
-    height: 200px;
-    width: 300px;
+    height: 250px;
+    width: 400px;
     object-fit: cover;
     object-position: center;
+}
+
+.navBarImg {
+  width: 50px;
 }

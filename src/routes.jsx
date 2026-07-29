@@ -7,7 +7,8 @@ import {
 } from "react-router-dom";
 import { Layout } from "./pages/Layout";
 import { Home } from "./pages/Home";
-import { Single } from "./pages/Single";
+import SingleItem from "./pages/SingleItem";
+import SingleList from "./pages/SingleList";
 
 export const router = createBrowserRouter(
     createRoutesFromElements(
@@ -22,7 +23,8 @@ export const router = createBrowserRouter(
 
         {/* Nested Routes: Defines sub-routes within the BaseHome component. */}
         <Route path= "/" element={<Home />} />
-        <Route path="/single/:theId" element={ <Single />} />
+        <Route element={<SingleItem/>} path="/SingleItem/:type/:theId"/>
+        <Route path="/list/:type" element={<SingleList/>} />
       </Route>
     )
 );
