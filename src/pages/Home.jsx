@@ -1,6 +1,11 @@
 import { Link } from "react-router-dom";
 import useGlobalReducer from "../hooks/useGlobalReducer";
 
+// Finalmente lo terminé. Me ha costado demasiado, necesito mucha practica y honestamente no me siento
+// satisfecho con como ha quedado, siento que puedo hacer algo mejor jajaj, pero
+// ya estoy lo suficientemente atrasado.
+
+
 export const Home = () => {
   const { store, dispatch } = useGlobalReducer();
 
@@ -80,7 +85,7 @@ export const Home = () => {
           </div>
         </div>
         <div className="bg-dark bg-opacity-50 mb-5">
-          <Link to="list/locations" className="text-decoration-none">
+          <Link to="list/location" className="text-decoration-none">
             <h1 className="mx-3 text-light">Ubicaciones</h1>
           </Link>
           <div className="d-flex flex-nowrap overflow-x-auto gap-3 pb-4">
@@ -146,7 +151,7 @@ export const Home = () => {
           </div>
         </div>
         <div className="bg-dark bg-opacity-50 mb-5">
-          <Link to="list/episodes" className="text-decoration-none">
+          <Link to="list/episode" className="text-decoration-none">
             <h1 className="mx-3 text-light">Episodios</h1>
           </Link>
           <div className="d-flex flex-nowrap overflow-x-auto gap-3 pb-4">
